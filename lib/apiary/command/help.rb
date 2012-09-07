@@ -17,12 +17,17 @@ module Apiary
       def self.commands
         puts "\nCurrently available apiary commands are:\n\n"
         puts "\tpreview                                     Show API documentation in default browser"
+
         puts "\tpreview --browser [chrome|safari|firefox]   Show API documentation in specified browser"
         puts "\tpreview --path [PATH]                       Specify path to blueprint file"
         puts "\tpreview --api_host [HOST]                   Specify apiary host"
         puts "\tpreview --server                            Start standalone web server on port 8080"
         puts "\tpreview --server --port [PORT]              Start standalone web server on specified port"
         puts "\n"
+
+        puts "\tcompile                                     Compile all blueprints in ./apiary to ./apiary.apib "
+        puts "\n"
+
         puts "\thelp                                        Show help"
         puts "\n"
         puts "\tversion                                     Show version"
